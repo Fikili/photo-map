@@ -4,30 +4,58 @@
 module.exports = function (config) {
   config.set({
     basePath: '',
-    frameworks: ['jasmine', '@angular/cli'],
+    frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage-istanbul-reporter'),
-      require('@angular/cli/plugins/karma')
+      require('@angular-devkit/build-angular/plugins/karma')
     ],
+    files: [
+        { pattern: './node_modules/hammerjs/hammer.js', watched: false },
+        { pattern: './node_modules/@angular/material/prebuilt-themes/indigo-pink.css', watched: false },
+        { pattern: './node_modules/@alfresco/adf-core/bundles/assets/adf-core/i18n/en.json', watched: false, served: true, included: false },
+        { pattern: './node_modules/@alfresco/adf-content-services/bundles/assets/adf-content-services/i18n/en.json', watched: false, served: true, included: false }
+
+    ],
+    proxies: {
+        '/assets/adf-core/i18n/en.json': '/base/node_modules/@alfresco/adf-core/bundles/assets/adf-core/i18n/en.json',
+        '/assets/adf-content-services/i18n/en.json': '/base/node_modules/@alfresco/adf-content-services/bundles/assets/adf-content-services/i18n/en.json'
+    },
     client:{
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     coverageIstanbulReporter: {
-      reports: [ 'html', 'lcovonly' ],
+      dir: require('path').join(__dirname, 'coverage'), reports: [ 'html', 'lcovonly' ],
       fixWebpackSourcePaths: true
     },
-    angularCli: {
-      environment: 'dev'
-    },
+    
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
-    singleRun: false
+    browsers: ['ChromeHeadless'],
+    customLaunchers: {
+      ChromeHeadless: {
+        base: 'Chrome',
+        flags: [
+          '--no-sandbox',
+          '--headless',
+          '--disable-gpu',
+          '--remote-debugging-port=9222'
+        ]
+      }
+    },
+    singleRun: false,
+
+    captureTimeout: 180000,
+    browserDisconnectTimeout: 180000,
+    browserDisconnectTolerance: 3,
+    browserNoActivityTimeout: 300000,
+
+    // workaround for alfresco-js-api builds
+    webpack: { node: { fs: 'empty', } }
   });
 };

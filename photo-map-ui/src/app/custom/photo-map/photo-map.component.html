@@ -1,0 +1,13 @@
+<mat-tab-group>
+    <mat-tab label="View map">
+        <div id="mapId">
+        </div>
+    </mat-tab>
+    <mat-tab label="Add picture">
+        <form id="photoUploadForm">
+            <input type="file" (change)="onFileChange(event)">
+            <br>
+            <button mat-raised-button>Submit photo</button>
+        </form>
+    </mat-tab>
+</mat-tab-group>

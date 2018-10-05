@@ -1,0 +1,35 @@
+<div title="{{ (profile$ | async)?.id }}">
+    <div class="current-user__full-name">{{ (profile$ | async)?.userName }}</div>
+    <div
+        class="current-user__avatar am-avatar"
+        [matMenuTriggerFor]="userMenu">
+            {{ (profile$ | async)?.initials }}
+    </div>
+</div>
+
+<mat-menu #userMenu="matMenu" [overlapTrigger]="false">
+    <button *ngIf="languagePicker$ | async"
+        mat-menu-item [matMenuTriggerFor]="langMenu">
+        {{ 'APP.LANGUAGE' | translate }}
+    </button>
+
+    <button *ngIf="(profile$ | async)?.isAdmin"
+        mat-menu-item
+        routerLink="/about">
+        {{ 'APP.BROWSE.ABOUT.TITLE' | translate }}
+    </button>
+
+    <button *ngIf="(profile$ | async)?.isAdmin"
+        mat-menu-item
+        routerLink="/settings">
+        {{ 'APP.SETTINGS.TITLE' | translate }}
+    </button>
+
+    <button mat-menu-item (click)="onLogoutEvent()" adf-logout>
+        {{ 'APP.SIGN_OUT' | translate }}
+    </button>
+</mat-menu>
+
+<mat-menu #langMenu="matMenu">
+    <adf-language-menu></adf-language-menu>
+</mat-menu>

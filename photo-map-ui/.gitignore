@@ -2,9 +2,9 @@
 
 # compiled output
 /dist
-/dist-server
 /tmp
 /out-tsc
+/src/versions.json
 
 # dependencies
 /node_modules
@@ -24,6 +24,7 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.history
 
 # misc
 /.sass-cache
@@ -31,13 +32,14 @@
 /coverage
 /libpeerconnection.log
 npm-debug.log
-yarn-error.log
 testem.log
 /typings
+/www
 
 # e2e
 /e2e/*.js
 /e2e/*.map
+/e2e-output
 
 # System Files
 .DS_Store

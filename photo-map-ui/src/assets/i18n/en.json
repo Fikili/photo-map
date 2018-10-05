@@ -1,0 +1,343 @@
+{
+    "APP": {
+        "LANGUAGE": "Language",
+        "SIGN_IN": "Sign in",
+        "SIGN_OUT": "Sign out",
+        "SETTINGS": {
+            "TITLE": "Settings",
+            "APPLICATION-SETTINGS": "Application Settings",
+            "REPOSITORY-SETTINGS": "Repository Settings",
+            "EXPERIMENTAL-FEATURES": "Experimental Features",
+            "INVALID-VALUE-FORMAT": "Invalid value format",
+            "REQUIRED-FIELD": "This field is required",
+            "RESET": "Reset",
+            "APPLY": "Apply"
+        },
+        "PREVIEW": {
+            "TITLE": "Preview"
+        },
+        "NEW_MENU": {
+            "LABEL": "New",
+            "TOOLTIP": "Add new files or folders",
+            "MENU_ITEMS": {
+                "CREATE_FOLDER": "Create folder",
+                "UPLOAD_FILE": "Upload file",
+                "UPLOAD_FOLDER": "Upload folder"
+            },
+            "TOOLTIPS": {
+                "CREATE_FOLDER": "Create new folder",
+                "CREATE_FOLDER_NOT_ALLOWED": "Folders cannot be created whilst viewing the current items",
+                "UPLOAD_FILES": "Select files to upload",
+                "UPLOAD_FILES_NOT_ALLOWED": "Files cannot be uploaded whilst viewing the current items",
+                "UPLOAD_FOLDERS": "Select folders to upload",
+                "UPLOAD_FOLDERS_NOT_ALLOWED": "Folders cannot be uploaded whilst viewing the current items"
+            }
+        },
+        "BROWSE": {
+            "PERSONAL": {
+                "TITLE": "Personal Files",
+                "SIDENAV_LINK": {
+                    "LABEL": "Personal Files",
+                    "TOOLTIP": "View your Personal Files"
+                }
+            },
+            "LIBRARIES": {
+                "TITLE": "File Libraries",
+                "SIDENAV_LINK": {
+                    "LABEL": "File Libraries",
+                    "TOOLTIP": "Access File Libraries"
+                },
+                "EMPTY_STATE": {
+                    "TITLE": "You aren't a member of any File Libraries yet",
+                    "TEXT": "Join libraries to upload, view, and share files."
+                }
+            },
+            "SHARED": {
+                "TITLE": "Shared Files",
+                "SIDENAV_LINK": {
+                    "LABEL": "Shared",
+                    "TOOLTIP": "View files that have been shared"
+                },
+                "EMPTY_STATE": {
+                    "TITLE": "No shared files or folders",
+                    "TEXT": "Items you share using the Share option are shown here."
+                }
+            },
+            "RECENT": {
+                "TITLE": "Recent Files",
+                "SIDENAV_LINK": {
+                    "LABEL": "Recent Files",
+                    "TOOLTIP": "View files you recently edited"
+                },
+                "EMPTY_STATE": {
+                    "TITLE": "No recent files",
+                    "TEXT": "Items you upload or edit in the last 30 days are shown here."
+                }
+            },
+            "FAVORITES": {
+                "TITLE": "Favorites",
+                "SIDENAV_LINK": {
+                    "LABEL": "Favorites",
+                    "TOOLTIP": "View your favorite files and folders"
+                },
+                "EMPTY_STATE": {
+                    "TITLE": "No favorite files or folders",
+                    "TEXT": "Favorite items that you want to easily find later."
+                }
+            },
+            "TRASHCAN": {
+                "TITLE": "Trash",
+                "SIDENAV_LINK": {
+                    "LABEL": "Trash",
+                    "TOOLTIP": "View deleted files in the trash"
+                },
+                "EMPTY_STATE": {
+                    "TITLE": "Trash is empty",
+                    "FIRST_TEXT": "Items you delete are moved to the Trash.",
+                    "SECOND_TEXT": "Empty Trash to permanently delete items."
+                }
+            },
+            "ABOUT": {
+                "TITLE": "About"
+            },
+            "SEARCH": {
+                "TITLE": "Search Results",
+                "FOUND_RESULTS": "{{ number }} results found",
+                "CUSTOM_ROW": {
+                    "MODIFIED": "Modified",
+                    "LOCATION": "Location",
+                    "SIZE": "Size"
+                },
+                "NO_RESULTS": "Your search returned 0 results"
+            }
+        },
+        "ACTIONS": {
+            "VIEW": "View",
+            "EDIT": "Edit",
+            "DOWNLOAD": "Download",
+            "COPY": "Copy",
+            "MOVE": "Move",
+            "DELETE": "Delete",
+            "DELETE_PERMANENT": "Permanently delete",
+            "MORE": "More actions",
+            "UNDO": "Undo",
+            "PERMISSIONS": "Permissions",
+            "RESTORE": "Restore",
+            "FAVORITE": "Favorite",
+            "UNSHARE": "Unshare",
+            "DETAILS": "View details",
+            "VERSIONS": "Manage Versions",
+            "TOGGLE-SIDENAV": "Toggle side navigation bar",
+            "SHARE": "Share"
+        },
+        "DIALOGS": {
+            "CONFIRM_PURGE": {
+                "TITLE": "Delete from trash?",
+                "MESSAGE": "This will permanently remove the selected item(s).",
+                "YES_LABEL": "Delete",
+                "NO_LABEL": "Keep"
+            }
+        },
+        "DOCUMENT_LIST": {
+            "COLUMNS": {
+                "NAME": "Name",
+                "SIZE": "Size",
+                "MODIFIED_ON": "Modified",
+                "MODIFIED_BY": "Modified by",
+                "STATUS": "Status",
+                "TITLE": "Title",
+                "LOCATION": "Location",
+                "SHARED_BY": "Shared by",
+                "DELETED_ON": "Deleted",
+                "DELETED_BY": "Deleted by"
+            },
+            "TOOLBAR": {
+                "CARDVIEW": "Card view mode",
+                "LISTVIEW": "List view mode"
+            }
+        },
+        "SITES_VISIBILITY": {
+            "PUBLIC": "Public",
+            "MODERATED": "Moderated",
+            "PRIVATE": "Private"
+        },
+        "MESSAGES": {
+            "ERRORS":{
+                "MISSING_CONTENT": "This file or folder no longer exists or you don't have permission to view it.",
+                "GENERIC": "The action was unsuccessful. Try again or contact your IT Team.",
+                "CONFLICT": "This name is already in use, try a different name.",
+                "NODE_MOVE": "Move unsuccessful, a file with the same name already exists.",
+                "EXISTENT_FOLDER": "There's already a folder with this name. Try a different name.",
+                "NODE_DELETION": "{{ name }} couldn't be deleted",
+                "NODE_DELETION_PLURAL": "{{ number }} items couldn't be deleted",
+                "NODE_RESTORE": "{{ name }} couldn't be restored",
+                "NODE_RESTORE_PLURAL": "{{ number }} items couldn't be restored",
+                "PERMISSION": "You don't have access to do this",
+                "TRASH": {
+                    "NODES_PURGE": {
+                        "PLURAL": "{{ number }} items couldn't be deleted",
+                        "SINGULAR": "{{ name }} couldn't be deleted"
+                    },
+                    "NODES_RESTORE": {
+                        "PARTIAL_PLURAL": "{{ number }} items not restored because of issues with the restore location",
+                        "NODE_EXISTS": "Can't restore, {{ name }} already exists",
+                        "LOCATION_MISSING": "Can't restore {{ name }}, the original location no longer exists",
+                        "GENERIC": "There was a problem restoring {{ name }}"
+                    }
+                },
+                "DELETE_LIBRARY_FAILED": "Cannot delete the library"
+            },
+            "UPLOAD": {
+                "ERROR": {
+                    "GENERIC": "There was a problem",
+                    "CONFLICT": "New version not uploaded, another file with the same name already exists",
+                    "500": "There was a problem while uploading"
+                }
+            },
+            "INFO": {
+                "TRASH": {
+                    "NODES_PURGE": {
+                        "PLURAL": "{{ number }} items deleted",
+                        "SINGULAR": "{{ name }} deleted",
+                        "PARTIAL_SINGULAR": "{{ name }} deleted, {{ failed }} couldn't be deleted",
+                        "PARTIAL_PLURAL": "{{ number }} items deleted, {{ failed }} couldn't be deleted"
+                    },
+                    "NODES_RESTORE": {
+                        "PLURAL": "Restore successful",
+                        "SINGULAR": "{{ name }} restored"
+                    }
+                },
+                "NODE_DELETION": {
+                    "SINGULAR": "{{ name }} deleted",
+                    "PLURAL": "Deleted {{ number }} items",
+                    "PARTIAL_SINGULAR": "Deleted {{ success }} item, {{ failed }} couldn't be deleted",
+                    "PARTIAL_PLURAL": "Deleted {{ success }} items, {{ failed }} couldn't be deleted"
+                },
+                "NODE_COPY": {
+                    "SINGULAR": "Copied {{ success }} item",
+                    "PLURAL": "Copied {{ success }} items",
+                    "PARTIAL_SINGULAR": "Copied {{ success }} item, {{ failed }} couldn't be copied.",
+                    "PARTIAL_PLURAL": "Copied {{ success }} items, {{ failed }} couldn't be copied.",
+                    "FAIL_SINGULAR": "{{ failed }} item couldn't be copied.",
+                    "FAIL_PLURAL": "{{ failed }} items couldn't be copied."
+                },
+                "NODE_MOVE": {
+                    "SINGULAR": "Moved {{ success }} item.",
+                    "PLURAL": "Moved {{ success }} items.",
+                    "PARTIAL": {
+                        "SINGULAR": "Partially moved {{ partially }} item.",
+                        "PLURAL": "Partially moved {{ partially }} items.",
+                        "FAIL": "{{ failed }} couldn't be moved."
+                    }
+                },
+                "LIBRARY_DELETED": "Library deleted"
+            }
+        },
+        "CONTENT_METADATA": {
+            "EXIF_GROUP_TITLE": "Image EXIF"
+        },
+        "INFO_DRAWER": {
+            "TITLE": "Details",
+            "TABS": {
+                "PROPERTIES": "Properties",
+                "VERSIONS": "Versions",
+                "COMMENTS": "Comments"
+            }
+        }
+    },
+    "NODE_SELECTOR": {
+        "COPY_ITEM": "Copy '{{ name }}' to...",
+        "COPY_ITEMS": "Copy {{ number }} items to...",
+        "MOVE_ITEM": "Move '{{ name }}' to...",
+        "MOVE_ITEMS": "Move {{ number }} items to...",
+        "SEARCH": "Search"
+    },
+    "PERMISSIONS": {
+        "DIALOG": {
+            "TITLE": "Manage Permissons",
+            "CLOSE": "Close",
+            "INHERIT_PERMISSIONS_BUTTON": "Inherit Permission",
+            "INHERITED_PERMISSIONS_BUTTON": "Permission Inherited"
+        }
+    },
+    "VERSION": {
+        "DIALOG": {
+            "TITLE": "Manage Versions",
+            "CLOSE": "Close"
+        },
+        "SELECTION": {
+            "EMPTY": "Please choose a document to see the versions of it.",
+            "NO_PERMISSION": "You don't have permission to manage the versions of this content."
+        }
+    },
+    "LIBRARY": {
+        "DIALOG": {
+            "CREATE_TITLE": "Create Library",
+            "CREATE": "Create",
+            "CANCEL": "Cancel",
+            "FORM": {
+                "DESCRIPTION": "Description",
+                "SITE_ID": "Library ID",
+                "NAME": "Name"
+            }
+        },
+        "VISIBILITY": {
+            "PRIVATE": "Private",
+            "PUBLIC": "Public",
+            "MODERATED": "Moderated"
+        },
+        "ERRORS": {
+            "GENERIC": "We hit a problem",
+            "EXISTENT_SITE": "This Library ID isn't available. Try a different Library.",
+            "CONFLICT": "This Library ID is already used. Check the trashcan.",
+            "ID_TOO_LONG": "Use 72 characters or less for the URL name",
+            "DESCRIPTION_TOO_LONG": "Use 512 characters or less for description",
+            "TITLE_TOO_LONG": "Use 256 characters or less for title",
+            "ILLEGAL_CHARACTERS": "Use numbers and letters only"
+        }
+    },
+
+    "SEARCH": {
+        "SORT": {
+            "RELEVANCE": "Relevance",
+            "FILENAME": "Filename",
+            "TITLE": "Title",
+            "MODIFIED_DATE": "Modified Date",
+            "SIZE": "Size",
+            "TYPE": "Type",
+            "MODIFIER": "Modifier",
+            "CREATE_DATE": "Created date"
+        },
+        "FACET_FIELDS": {
+            "FILE_TYPE": "File Type",
+            "CREATOR": "Creator",
+            "MODIFIER": "Modifier",
+            "LOCATION": "Location"
+        },
+        "CATEGORIES": {
+            "MODIFIED_DATE": "Modified date",
+            "SIZE": "Size",
+            "CREATED_DATE": "Created Date"
+        }
+    },
+    "CORE": {
+        "METADATA": {
+            "ACTIONS": {
+                "SAVE": "Save changes",
+                "CANCEL": "Discard changes"
+            }
+        }
+    },
+    "ADF_VIEWER": {
+        "ACTIONS": {
+            "INFO": "View details"
+        }
+    },
+    "ADF_VERSION_LIST": {
+        "ACTIONS": {
+            "UPLOAD": {
+                "TOOLTIP": "Upload new version"
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+<div class="sidenav">
+    <div class="sidenav__section sidenav__section sidenav_action-menu">
+        <adf-sidebar-action-menu
+            [expanded]="showLabel"
+            [attr.title]="'APP.NEW_MENU.TOOLTIP' | translate"
+            [title]="'APP.NEW_MENU.LABEL' | translate">
+            <mat-icon sidebar-menu-title-icon>arrow_drop_down</mat-icon>
+            <div sidebar-menu-expand-icon>
+                <mat-icon [title]="'APP.NEW_MENU.TOOLTIP' | translate">queue</mat-icon>
+            </div>
+            <div sidebar-menu-options>
+                <ng-container *ngFor="let action of createActions; trackBy: trackById">
+                    <app-toolbar-button
+                        type="menu-item"
+                        [actionRef]="action"></app-toolbar-button>
+                </ng-container>
+            </div>
+        </adf-sidebar-action-menu>
+    </div>
+
+    <div *ngFor="let group of groups; trackBy: trackById"
+        class="sidenav__section sidenav__section--menu" >
+        <ul class="sidenav-menu">
+            <li *ngFor="let item of group.items; trackBy: trackById"
+                class="sidenav-menu__item"
+                routerLinkActive
+                #rla="routerLinkActive"
+                [attr.title]="item.description | translate">
+
+                <button
+                    [id]="item.id"
+                    mat-icon-button
+                    mat-ripple
+                    [routerLink]="item.url"
+                    [color]="rla.isActive ? 'accent': 'primary'"
+                    [attr.aria-label]="item.title | translate"
+                    matRippleColor="primary"
+                    [matRippleTrigger]="rippleTrigger"
+                    [matRippleCentered]="true">
+
+                    <mat-icon>{{ item.icon }}</mat-icon>
+                </button>
+
+                <span #rippleTrigger
+                    [routerLink]="item.url"
+                    class="menu__item--label"
+                    [hidden]="!showLabel"
+                    [ngClass]="{
+                        'menu__item--active': rla.isActive,
+                        'menu__item--default': !rla.isActive
+                    }">{{ item.title | translate }}</span>
+            </li>
+        </ul>
+    </div>
+</div>

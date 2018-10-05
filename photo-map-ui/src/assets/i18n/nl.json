@@ -1,0 +1,342 @@
+{
+  "APP": {
+    "LANGUAGE": "Taal",
+    "SIGN_IN": "Aanmelden",
+    "SIGN_OUT": "Afmelden",
+    "SETTINGS": {
+      "TITLE": "Instellingen",
+      "APPLICATION-SETTINGS": "Toepassingsinstellingen",
+      "REPOSITORY-SETTINGS": "Opslagplaatsinstellingen",
+      "EXPERIMENTAL-FEATURES": "Experimentele onderdelen",
+      "INVALID-VALUE-FORMAT": "Ongeldige indeling van waarde",
+      "REQUIRED-FIELD": "Dit veld is vereist",
+      "RESET": "Opnieuw instellen",
+      "APPLY": "Toepassen"
+    },
+    "PREVIEW": {
+      "TITLE": "Preview"
+    },
+    "NEW_MENU": {
+      "LABEL": "Nieuw",
+      "TOOLTIP": "Nieuwe bestanden of mappen toevoegen",
+      "MENU_ITEMS": {
+        "CREATE_FOLDER": "Map maken",
+        "UPLOAD_FILE": "Bestand uploaden",
+        "UPLOAD_FOLDER": "Map uploaden"
+      },
+      "TOOLTIPS": {
+        "CREATE_FOLDER": "Nieuwe map maken",
+        "CREATE_FOLDER_NOT_ALLOWED": "Mappen kunnen niet worden gemaakt terwijl de huidige items worden weergegeven",
+        "UPLOAD_FILES": "Bestanden selecteren om te uploaden",
+        "UPLOAD_FILES_NOT_ALLOWED": "Bestanden kunnen niet worden geüpload terwijl de huidige items worden weergegeven",
+        "UPLOAD_FOLDERS": "Mappen selecteren om te uploaden",
+        "UPLOAD_FOLDERS_NOT_ALLOWED": "Mappen kunnen niet worden geüpload terwijl de huidige items worden weergegeven"
+      }
+    },
+    "BROWSE": {
+      "PERSONAL": {
+        "TITLE": "Persoonlijke bestanden",
+        "SIDENAV_LINK": {
+          "LABEL": "Persoonlijke bestanden",
+          "TOOLTIP": "Uw persoonlijke bestanden weergeven"
+        }
+      },
+      "LIBRARIES": {
+        "TITLE": "Bestandsbibliotheken",
+        "SIDENAV_LINK": {
+          "LABEL": "Bestandsbibliotheken",
+          "TOOLTIP": "Toegang krijgen tot bestandsbibliotheken"
+        },
+        "EMPTY_STATE": {
+          "TITLE": "U bent nog geen lid van een bestandsbibliotheek",
+          "TEXT": "Word lid van bibliotheken om bestanden te uploaden, weer te geven en te delen."
+        }
+      },
+      "SHARED": {
+        "TITLE": "Gedeelde bestanden",
+        "SIDENAV_LINK": {
+          "LABEL": "Gedeeld",
+          "TOOLTIP": "Bestanden weergeven die zijn gedeeld"
+        },
+        "EMPTY_STATE": {
+          "TITLE": "Geen gedeelde bestanden of mappen",
+          "TEXT": "Items die u deelt met de optie Delen worden hier weergegeven."
+        }
+      },
+      "RECENT": {
+        "TITLE": "Recente bestanden",
+        "SIDENAV_LINK": {
+          "LABEL": "Recente bestanden",
+          "TOOLTIP": "Bestand weergeven die u onlangs hebt bewerkt"
+        },
+        "EMPTY_STATE": {
+          "TITLE": "Geen recente bestanden",
+          "TEXT": "Items die u de afgelopen 30 dagen hebt geüpload of bewerkt worden hier weergegeven."
+        }
+      },
+      "FAVORITES": {
+        "TITLE": "Favorieten",
+        "SIDENAV_LINK": {
+          "LABEL": "Favorieten",
+          "TOOLTIP": "Uw favoriete bestanden en mappen weergeven"
+        },
+        "EMPTY_STATE": {
+          "TITLE": "Geen favoriete bestanden of mappen",
+          "TEXT": "Favoriete items die u later gemakkelijk wilt kunnen vinden."
+        }
+      },
+      "TRASHCAN": {
+        "TITLE": "Prullenbak",
+        "SIDENAV_LINK": {
+          "LABEL": "Prullenbak",
+          "TOOLTIP": "Verwijderde bestanden in de prullenbak weergeven"
+        },
+        "EMPTY_STATE": {
+          "TITLE": "Prullenbak is leeg",
+          "FIRST_TEXT": "Items die u verwijdert worden verplaatst naar de prullenbak.",
+          "SECOND_TEXT": "Maak de prullenmand leeg om items definitief te verwijderen."
+        }
+      },
+      "ABOUT": {
+        "TITLE": "Info"
+      },
+      "SEARCH": {
+        "TITLE": "Zoekresultaten",
+        "FOUND_RESULTS": "{{ number }} resultaten gevonden",
+        "CUSTOM_ROW": {
+          "MODIFIED": "Aangepast",
+          "LOCATION": "Locatie",
+          "SIZE": "Grootte"
+        },
+        "NO_RESULTS": "Uw zoekopdracht heeft 0 resultaten opgeleverd"
+      }
+    },
+    "ACTIONS": {
+      "VIEW": "Weergeven",
+      "EDIT": "Bewerken",
+      "DOWNLOAD": "Downloaden",
+      "COPY": "Kopiëren",
+      "MOVE": "Verplaatsen",
+      "DELETE": "Verwijderen",
+      "DELETE_PERMANENT": "Definitief verwijderen",
+      "MORE": "Meer acties",
+      "UNDO": "Ongedaan maken",
+      "PERMISSIONS": "Rechten",
+      "RESTORE": "Herstellen",
+      "FAVORITE": "Favoriet",
+      "UNSHARE": "Delen ongedaan maken",
+      "DETAILS": "Details weergeven",
+      "VERSIONS": "Versies beheren",
+      "TOGGLE-SIDENAV": "Zij-navigatiebalk in- of uitschakelen",
+      "SHARE": "Delen"
+    },
+    "DIALOGS": {
+      "CONFIRM_PURGE": {
+        "TITLE": "Verwijderen uit prullenbak?",
+        "MESSAGE": "Hiermee worden de geselecteerde items permanent verwijderd.",
+        "YES_LABEL": "Verwijderen",
+        "NO_LABEL": "Bewaren"
+      }
+    },
+    "DOCUMENT_LIST": {
+      "COLUMNS": {
+        "NAME": "Naam",
+        "SIZE": "Grootte",
+        "MODIFIED_ON": "Aangepast",
+        "MODIFIED_BY": "Aangepast door",
+        "STATUS": "Status",
+        "TITLE": "Titel",
+        "LOCATION": "Locatie",
+        "SHARED_BY": "Gedeeld door",
+        "DELETED_ON": "Verwijderd",
+        "DELETED_BY": "Verwijderd door"
+      },
+      "TOOLBAR": {
+        "CARDVIEW": "Kaartweergavemodus",
+        "LISTVIEW": "Lijstweergavemodus"
+      }
+    },
+    "SITES_VISIBILITY": {
+      "PUBLIC": "Openbaar",
+      "MODERATED": "Onder toezicht",
+      "PRIVATE": "Privé"
+    },
+    "MESSAGES": {
+      "ERRORS": {
+        "MISSING_CONTENT": "Dit bestand of deze map bestaat niet meer of u hebt geen rechten om het bestand of de map weer te geven.",
+        "GENERIC": "De actie is mislukt. Probeer het opnieuw of neem contact op met het IT-team.",
+        "CONFLICT": "Deze naam wordt al gebruikt, probeer een andere naam.",
+        "NODE_MOVE": "Verplaatsen is mislukt, er bestaat al een bestand met dezelfde naam.",
+        "EXISTENT_FOLDER": "Er bestaat al een map met deze naam. Probeer een andere naam.",
+        "NODE_DELETION": "Kan {{ name }} niet verwijderen",
+        "NODE_DELETION_PLURAL": "Kan {{ number }} items niet verwijderen",
+        "NODE_RESTORE": "Kan {{ name }} niet herstellen",
+        "NODE_RESTORE_PLURAL": "Kan {{ number }} items niet herstellen",
+        "PERMISSION": "U hebt geen toegang om dit te doen",
+        "TRASH": {
+          "NODES_PURGE": {
+            "PLURAL": "Kan {{ number }} items niet verwijderen",
+            "SINGULAR": "Kan {{ name }} niet verwijderen"
+          },
+          "NODES_RESTORE": {
+            "PARTIAL_PLURAL": "Kan {{ number }} items niet herstellen vanwege problemen met de herstellocatie",
+            "NODE_EXISTS": "Herstellen niet mogelijk, {{ name }} bestaat al",
+            "LOCATION_MISSING": "Kan {{ name }} niet herstellen, de oorspronkelijke locatie bestaat niet meer",
+            "GENERIC": "Er is een probleem opgetreden bij het herstellen van {{ name }}"
+          }
+        },
+        "DELETE_LIBRARY_FAILED": "De bibliotheek kan niet worden verwijderd"
+      },
+      "UPLOAD": {
+        "ERROR": {
+          "GENERIC": "Er is een probleem opgetreden",
+          "CONFLICT": "Nieuwe versie is niet geüpload, er bestaat al een ander bestand met dezelfde naam",
+          "500": "Er is een probleem opgetreden tijdens het uploaden"
+        }
+      },
+      "INFO": {
+        "TRASH": {
+          "NODES_PURGE": {
+            "PLURAL": "{{ number }} items verwijderd",
+            "SINGULAR": "{{ name }} verwijderd",
+            "PARTIAL_SINGULAR": "{{ name }} verwijderd, kan {{ failed }} niet verwijderen",
+            "PARTIAL_PLURAL": "{{ number }} items verwijderd, kan {{ failed }} niet verwijderen"
+          },
+          "NODES_RESTORE": {
+            "PLURAL": "Herstellen geslaagd",
+            "SINGULAR": "{{ name }} hersteld"
+          }
+        },
+        "NODE_DELETION": {
+          "SINGULAR": "{{ name }} verwijderd",
+          "PLURAL": "{{ number }} items verwijderd",
+          "PARTIAL_SINGULAR": "{{ success }} item verwijderd, kan {{ failed }} niet verwijderen",
+          "PARTIAL_PLURAL": "{{ success }} items verwijderd, kan {{ failed }} niet verwijderen"
+        },
+        "NODE_COPY": {
+          "SINGULAR": "{{ success }} item gekopieerd",
+          "PLURAL": "{{ success }} items gekopieerd",
+          "PARTIAL_SINGULAR": "{{ success }} item gekopieerd, kan {{ failed }} niet kopiëren.",
+          "PARTIAL_PLURAL": "{{ success }} items gekopieerd, kan {{ failed }} niet kopiëren.",
+          "FAIL_SINGULAR": "Kan {{ failed }} item niet kopiëren.",
+          "FAIL_PLURAL": "Kan {{ failed }} items niet kopiëren."
+        },
+        "NODE_MOVE": {
+          "SINGULAR": "{{ success }} item verplaatst.",
+          "PLURAL": "{{ success }} items verplaatst.",
+          "PARTIAL": {
+            "SINGULAR": "{{ partially }} item gedeeltelijk verplaatst.",
+            "PLURAL": "{{ partially }} items gedeeltelijk verplaatst.",
+            "FAIL": "Kan {{ failed }} niet verplaatsen."
+          }
+        },
+        "LIBRARY_DELETED": "Bibliotheek verwijderd"
+      }
+    },
+    "CONTENT_METADATA": {
+      "EXIF_GROUP_TITLE": "EXIF afbeelding"
+    },
+    "INFO_DRAWER": {
+      "TITLE": "Details",
+      "TABS": {
+        "PROPERTIES": "Eigenschappen",
+        "VERSIONS": "Versies",
+        "COMMENTS": "Opmerkingen"
+      }
+    }
+  },
+  "NODE_SELECTOR": {
+    "COPY_ITEM": "'{{ name }}' kopiëren naar...",
+    "COPY_ITEMS": "{{ number }} items kopiëren naar...",
+    "MOVE_ITEM": "'{{ name }}' verplaatsen naar...",
+    "MOVE_ITEMS": "{{ number }} items verplaatsen naar...",
+    "SEARCH": "Zoeken"
+  },
+  "PERMISSIONS": {
+    "DIALOG": {
+      "TITLE": "Rechten beheren",
+      "CLOSE": "Sluiten",
+      "INHERIT_PERMISSIONS_BUTTON": "Machtiging overnemen",
+      "INHERITED_PERMISSIONS_BUTTON": "Machtiging overgenomen"
+    }
+  },
+  "VERSION": {
+    "DIALOG": {
+      "TITLE": "Versies beheren",
+      "CLOSE": "Sluiten"
+    },
+    "SELECTION": {
+      "EMPTY": "Kies een document om de versies ervan weer te geven.",
+      "NO_PERMISSION": "U hebt geen rechten voor het beheren van de versies van deze content."
+    }
+  },
+  "LIBRARY": {
+    "DIALOG": {
+      "CREATE_TITLE": "Bibliotheek maken",
+      "CREATE": "Maken",
+      "CANCEL": "Annuleren",
+      "FORM": {
+        "DESCRIPTION": "Beschrijving",
+        "SITE_ID": "Bibliotheek-id",
+        "NAME": "Naam"
+      }
+    },
+    "VISIBILITY": {
+      "PRIVATE": "Privé",
+      "PUBLIC": "Openbaar",
+      "MODERATED": "Onder toezicht"
+    },
+    "ERRORS": {
+      "GENERIC": "Er is een probleem opgetreden",
+      "EXISTENT_SITE": "Deze bibliotheek-id is niet beschikbaar. Probeer een andere bibliotheek.",
+      "CONFLICT": "Deze bibliotheek wordt al gebruikt. Controleer de prullenbak.",
+      "ID_TOO_LONG": "Gebruik 72 tekens of minder voor de URL-naam",
+      "DESCRIPTION_TOO_LONG": "Gebruik 512 tekens of minder voor de beschrijving",
+      "TITLE_TOO_LONG": "Gebruik 256 tekens of minder voor de titel",
+      "ILLEGAL_CHARACTERS": "Gebruik alleen cijfers en letters"
+    }
+  },
+  "SEARCH": {
+    "SORT": {
+      "RELEVANCE": "Relevantie",
+      "FILENAME": "Bestandsnaam",
+      "TITLE": "Titel",
+      "MODIFIED_DATE": "Datum gewijzigd",
+      "SIZE": "Grootte",
+      "TYPE": "Type",
+      "MODIFIER": "Gewijzigd door",
+      "CREATE_DATE": "Datum gemaakt"
+    },
+    "FACET_FIELDS": {
+      "FILE_TYPE": "Bestandstype",
+      "CREATOR": "Maker",
+      "MODIFIER": "Gewijzigd door",
+      "LOCATION": "Locatie"
+    },
+    "CATEGORIES": {
+      "MODIFIED_DATE": "Datum gewijzigd",
+      "SIZE": "Grootte",
+      "CREATED_DATE": "Datum gemaakt"
+    }
+  },
+  "CORE": {
+    "METADATA": {
+      "ACTIONS": {
+        "SAVE": "Wijzigingen opslaan",
+        "CANCEL": "Wijzigingen negeren"
+      }
+    }
+  },
+  "ADF_VIEWER": {
+    "ACTIONS": {
+      "INFO": "Details weergeven"
+    }
+  },
+  "ADF_VERSION_LIST": {
+    "ACTIONS": {
+      "UPLOAD": {
+        "TOOLTIP": "Nieuwe versie uploaden"
+      }
+    }
+  }
+}
