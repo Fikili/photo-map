@@ -5,9 +5,9 @@
     </mat-tab>
     <mat-tab label="Add picture">
         <form id="photoUploadForm">
-            <input type="file" (change)="onFileChange(event)">
+            <input type="file" (change)="onFileChange($event)">
             <br>
-            <button mat-raised-button>Submit photo</button>
+            <button mat-raised-button (click)="submitForm()">Submit photo</button>
         </form>
     </mat-tab>
 </mat-tab-group>

@@ -29,5 +29,7 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  photoFolder: "0ab8423b-bc5b-4024-9f1b-4f5790d2cb44"
 };
