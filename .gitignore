@@ -6,3 +6,4 @@
 /target/
 .project
 .classpath
+photo-map-repo/src/main/resources/rebel.xml
