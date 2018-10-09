@@ -6,3 +6,4 @@
 /target/
 .project
 .classpath
+/src/main/resources/rebel.xml
