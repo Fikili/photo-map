@@ -1,0 +1,9 @@
+/.settings/
+/alf_data_dev/
+/logs/
+/.metadata/
+*.log*
+/target/
+.project
+.classpath
+/src/main/resources/rebel.xml
