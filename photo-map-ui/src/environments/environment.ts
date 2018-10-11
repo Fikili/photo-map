@@ -31,5 +31,5 @@
 export const environment = {
   production: false,
 
-  photoFolder: "0ab8423b-bc5b-4024-9f1b-4f5790d2cb44"
+  photoFolder: "bb957630-56a5-48b1-a5a1-8b09c4b25494"
 };

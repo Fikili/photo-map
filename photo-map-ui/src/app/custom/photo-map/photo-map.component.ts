@@ -2,11 +2,15 @@ import { Component, AfterViewInit } from '@angular/core';
 import { NodesApiService, FileModel, UploadService } from '@alfresco/adf-core';
 import { environment } from '../../../environments/environment';
 
-const marker = L.icon({
-    iconUrl: 'assets/leaflet/images/marker-icon.png',
-    shadowUrl: 'assets/leaflet/images/marker-shadow.png',
 
-});
+delete L.Icon.Default.prototype._getIconUrl
+
+L.Icon.Default.mergeOptions({
+    iconRetinaUrl: "assets/leaflet/images/marker-icon-2x.png",
+    iconUrl: "assets/leaflet/images/marker-icon.png",
+    shadowUrl: "assets/leaflet/images/marker-shadow.png",
+})
+
 declare let L;
 
 @Component({
@@ -35,10 +39,12 @@ export class PhotoMapComponent implements AfterViewInit {
         this.nodesApiService.getNodeChildren(environment.photoFolder).subscribe(nodes =>{
             for(let node of nodes.list.entries){
                 console.log(node.entry.name);
+                console.log(node.entry.properties["photo:latitude"] + " "  + node.entry.properties["photo:longitude"]);
+                L.marker([node.entry.properties["photo:latitude"], node.entry.properties["photo:longitude"]]).addTo(map);
+
             }
         })
 
-        L.marker([51.5, -0.09], { icon: marker }).addTo(map);
     }
 
     submitForm(){
