@@ -30,7 +30,6 @@ public class ImageMetadataExtractor extends AbstractMappingMetadataExtracter  {
  
     public ImageMetadataExtractor(){
         super(new HashSet<String>(Arrays.asList(SUPPORTED_MIMETYPES)));
-        LOGGER.debug("");
     }
     
 	@Override
