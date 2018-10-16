@@ -2,15 +2,15 @@ package com.tieto.alfresco.photomap.springboot.pojo;
 
 public class Landmark {
 
-	private String landmark;
+	private String label;
 	private double latitude;
 	private double longitude;
 	
-	public String getLandmark() {
-		return landmark;
+	public String getLabel() {
+		return label;
 	}
-	public void setLandmark(String landmark) {
-		this.landmark = landmark;
+	public void setLabel(String label) {
+		this.label = label;
 	}
 	public double getLatitude() {
 		return latitude;
@@ -27,7 +27,7 @@ public class Landmark {
 	
 	@Override
 	public String toString() {
-		return "Landmark [name=" + landmark + ", latitude=" + latitude + ", longitude=" + longitude + "]";
+		return "Landmark [label=" + label + ", latitude=" + latitude + ", longitude=" + longitude + "]";
 	}
 	
 }
