@@ -25,4 +25,4 @@ For better illustration, see the image:
 * Springboot app is running on port 9090
   * GOOGLE_APPLICATION_CREDENTIALS has to be declared properly, otherwise Vision API will not work
 * ADF is running on <host>:4200/#/photo
-  * Don't forget to specify ID in photoFolder section in [environment.ts](/photo-map/photo-map-ui/src/environments/environment.ts)
+  * Don't forget to specify ID in photoFolder section in [environment.ts](/photo-map-ui/src/environments/environment.ts)
