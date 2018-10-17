@@ -18,3 +18,11 @@ There are several components used:
 
 For better illustration, see the image:
 ![Architecture image](/photo-examples/photo-map-architecture.png)
+
+# Application startup/details
+* Alfresco with photo-map-repo jar is up and running on port 8080
+  * ImageMetadataExtractor is responsible for contacting Springboot app
+* Springboot app is running on port 9090
+  * GOOGLE_APPLICATION_CREDENTIALS has to be declared properly, otherwise Vision API will not work
+* ADF is running on <host>:4200/#/photo
+  * Don't forget to specify ID in photoFolder section in [environment.ts](/photo-map/photo-map-ui/src/environments/environment.ts)
