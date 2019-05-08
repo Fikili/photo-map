@@ -61,14 +61,14 @@
               "src/assets/fonts/material-icons/material-icons.css",
               "src/assets/fonts/muli/muli.css",
               "src/styles.scss",
-              "src/assets/leaflet/leaflet.css"
+              "node_modules/leaflet/dist/leaflet.css",
+              "node_modules/leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css"
             ],
             "scripts": [
               "node_modules/pdfjs-dist/build/pdf.js",
               "node_modules/pdfjs-dist/lib/shared/compatibility.js",
               "node_modules/pdfjs-dist/web/pdf_viewer.js",
-              "node_modules/moment/min/moment.min.js",
-              "src/assets/leaflet/leaflet.js"
+              "node_modules/moment/min/moment.min.js"
             ]
           },
           "configurations": {
