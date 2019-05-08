@@ -66,10 +66,6 @@ export const APP_ROUTES: Routes = [
         }
     },
     {
-        path: 'photo',
-        component: PhotoMapComponent
-    },
-    {
         path: '',
         component: LayoutComponent,
         resolve: { profile: ProfileResolver },
@@ -258,6 +254,14 @@ export const APP_ROUTES: Routes = [
                         }
                     }
                 ]
+            },
+            {
+                path: 'photomap',
+                component: PhotoMapComponent,
+                data: {
+                    title: 'APP.BROWSE.TRASHCAN.TITLE',
+                    sortingPreferenceKey: 'photomap'
+                }
             },
             {
                 path: '**',
