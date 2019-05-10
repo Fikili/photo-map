@@ -259,7 +259,7 @@ export const APP_ROUTES: Routes = [
                 path: 'photomap',
                 component: PhotoMapComponent,
                 data: {
-                    title: 'APP.BROWSE.TRASHCAN.TITLE',
+                    title: 'APP.BROWSE.PHOTOMAP.TITLE',
                     sortingPreferenceKey: 'photomap'
                 }
             },

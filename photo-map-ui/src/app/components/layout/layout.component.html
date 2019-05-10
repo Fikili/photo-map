@@ -1,26 +1,14 @@
 <div class="layout">
-    <adf-upload-drag-area
-        [parentId]="node?.id"
-        [disabled]="!canUpload">
+    <adf-upload-drag-area [parentId]="node?.id" [disabled]="!canUpload">
 
-        <adf-sidenav-layout
-            #sidenavManager="acaSidenavManager"
-            acaSidenavManager
-            [sidenavMin]="70"
-            [sidenavMax]="320"
-            [stepOver]="600"
-            [hideSidenav]="sidenavManager.hideSidenav"
-            [expandedSidenav]="expandedSidenav"
+        <adf-sidenav-layout #sidenavManager="acaSidenavManager" acaSidenavManager [sidenavMin]="70" [sidenavMax]="320"
+            [stepOver]="600" [hideSidenav]="sidenavManager.hideSidenav" [expandedSidenav]="expandedSidenav"
             (expanded)="sidenavManager.setState($event)">
 
             <adf-sidenav-layout-header>
                 <ng-template let-toggleMenu="toggleMenu">
-                    <adf-layout-header
-                        [logo]="logo$ | async"
-                        [redirectUrl]="'/personal-files'"
-                        [tooltip]="appName$ | async"
-                        [color]="headerColor$ | async"
-                        [title]="appName$ | async"
+                    <adf-layout-header [logo]="logo$ | async" [redirectUrl]="'/personal-files'"
+                        [tooltip]="appName$ | async" [color]="headerColor$ | async" [title]="appName$ | async"
                         (clicked)="toggleMenu($event)">
 
                         <div class="adf-toolbar--spacer"></div>
@@ -39,6 +27,12 @@
             <adf-sidenav-layout-navigation>
                 <ng-template let-isMenuMinimized="isMenuMinimized">
                     <app-sidenav [showLabel]="!isMenuMinimized()"></app-sidenav>
+                    <mat-nav-list class="adf-sidenav-linklist">
+                        <a mat-list-item class="adf-sidenav-link" routerLink="/photomap">
+                            <mat-icon matListIcon class="sidenav-menu-icon">pin_drop</mat-icon>
+                            <div class="sidenav-menu-label" *ngIf="!isMenuMinimized()">Photo map</div>
+                        </a>
+                    </mat-nav-list>
                 </ng-template>
             </adf-sidenav-layout-navigation>
 

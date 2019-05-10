@@ -109,7 +109,10 @@
                     "SIZE": "Size"
                 },
                 "NO_RESULTS": "Your search returned 0 results"
-            }
+            },
+			"PHOTOMAP": {
+				"TITLE": "Photomap"
+			}
         },
         "ACTIONS": {
             "VIEW": "View",
