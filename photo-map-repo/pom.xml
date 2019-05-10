@@ -11,7 +11,7 @@
 
     <properties>
         <!-- Alfresco Maven Plugin version to use -->
-        <alfresco.sdk.version>3.0.1</alfresco.sdk.version>
+        <alfresco.sdk.version>3.1.0</alfresco.sdk.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
@@ -52,6 +52,9 @@
         <!-- Compile with Java 7, default is 5 -->
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        
+        <!-- Let's use supported Tomcat version -->
+        <maven.alfresco.tomcat.version>7.0.82</maven.alfresco.tomcat.version>
     </properties>
 
     <!-- This will import the dependencyManagement for all artifacts in the selected Alfresco platform.
