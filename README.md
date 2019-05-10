@@ -7,6 +7,15 @@ Main entry point is ADF application with two pages:
 
 You can use Alfresco API instead of ADF because logic is done on platform side.
 
+Work on this project continued on Alfresco Hackathon 2019:
+* Map component is now placed inside application default layout
+* Button was added to side navigation panel for easy access to map component
+* When picture is not recognized it is placed into Bermuda triangle
+* Nodes without photo aspect are ignored
+* Markers are now clustered
+* Leaflet library is now used as typescript library instead of plain js library
+* Issue with markers is now resolved by library instead of fixing it directly in photo component
+
 # Architecture
 There are several components used:
 * Alfresco platform 
