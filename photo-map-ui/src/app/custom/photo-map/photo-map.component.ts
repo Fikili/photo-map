@@ -3,7 +3,7 @@ import { NodesApiService, FileModel, UploadService } from '@alfresco/adf-core';
 import { environment } from '../../../environments/environment';
 import * as Leaflet from "leaflet";
 import 'leaflet-defaulticon-compatibility';
-import * as cl from 'leaflet.markercluster';
+import * as CL from 'leaflet.markercluster';
 
 
 @Component({
@@ -14,7 +14,7 @@ import * as cl from 'leaflet.markercluster';
 export class PhotoMapComponent implements AfterViewInit {
     selectedFile: File;
     map: Leaflet.Map;
-    layerGroup: cl.MarkerClusterGroup;
+    layerGroup: CL.MarkerClusterGroup;
 
     constructor(public nodesApiService: NodesApiService,
         private uploadService: UploadService) { }
@@ -34,7 +34,7 @@ export class PhotoMapComponent implements AfterViewInit {
                 this.map = Leaflet.map('mapId').setView([0, 0], 1);
                 Leaflet.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 }).addTo(this.map);
-                this.layerGroup = new cl.MarkerClusterGroup().addTo(this.map);
+                this.layerGroup = new CL.MarkerClusterGroup().addTo(this.map);
             }
             this.layerGroup.clearLayers();
             for (let node of nodes.list.entries) {
