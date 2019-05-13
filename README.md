@@ -16,6 +16,9 @@ Work on this project continued on Alfresco Hackathon 2019:
 * Leaflet library is now used as typescript library instead of plain js library
 * Issue with markers is now resolved by library instead of fixing it directly in photo component
 
+# Demo
+[![Hackathon project](http://img.youtube.com/vi/CLhxdMDXW4s/0.jpg)](http://www.youtube.com/watch?v=CLhxdMDXW4s "Alfresco PhotoMap ")
+
 # Architecture
 There are several components used:
 * Alfresco platform 
